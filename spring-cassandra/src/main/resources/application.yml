@@ -1,0 +1,11 @@
+spring:
+  data:
+    cassandra:
+      contactPoints: localhost
+      port: 9042
+      local-datacenter: datacenter1
+      schema-action: CREATE_IF_NOT_EXISTS
+
+cassandra.keyspace: library
+cassandra.schema-action: CREATE_IF_NOT_EXISTS
+cassandra.base-package: com.torresmath.springcassandra

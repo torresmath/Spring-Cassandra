@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+
+  db-01:
+    image: "cassandra"
+    ports:
+     - "9042:9042"
+    networks:
+      - cassandranet
+    environment:
+      broadcast_address: db-01
+      seeds: db-01,db-02,db-03
+    volumes:
+      - cassandra-volume-db01:/var/lib/cassandra
+
+  db-02:
+    image: "cassandra"
+    networks:
+      - cassandranet
+    environment:
+      broadcast_address: db-02
+      seeds: db-01,db-02,db-03
+    volumes:
+      - cassandra-volume-db02:/var/lib/cassandra
+
+  db-03:
+    image: "cassandra"
+    networks:
+      - cassandranet
+    environment:
+      broadcast_address: db-03
+      seeds: db-01,db-02,db-03
+    volumes:
+      - cassandra-volume-db03:/var/lib/cassandra
+
+networks:
+  cassandranet:
+
+volumes:
+  cassandra-volume-db01:
+  cassandra-volume-db02:
+  cassandra-volume-db03:
