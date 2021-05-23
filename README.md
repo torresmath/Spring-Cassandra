@@ -23,4 +23,7 @@ Na aplicação de exemplo, temos as entidades Movie e Actor. Além delas, criamo
 <li>Docker e Docker compose</li>
 <br>
 Basta dar um docker-compose up no terminal para subir os nodes do Cassandra.
+
+<h1>Referências</h1>
+[Apache Cassandra - Escalabilidade horizontal para aplicações Java](https://www.casadocodigo.com.br/products/livro-apache-cassandra?_pos=1&_sid=aa6fb17d4&_ss=r)
   
