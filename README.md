@@ -25,5 +25,12 @@ Na aplicação de exemplo, temos as entidades Movie e Actor. Além delas, criamo
 Basta dar um docker-compose up no terminal para subir os nodes do Cassandra.
 
 <h1>Referências</h1>
-[Apache Cassandra - Escalabilidade horizontal para aplicações Java](https://www.casadocodigo.com.br/products/livro-apache-cassandra?_pos=1&_sid=aa6fb17d4&_ss=r)
-  
+<li>
+  <a href="https://www.casadocodigo.com.br/products/livro-apache-cassandra?_pos=1&_sid=aa6fb17d4&_ss=r">Apache Cassandra - Escalabilidade horizontal para aplicações Java]</a></li>
+<li>
+  <a href="https://pt.wikipedia.org/wiki/Teorema_CAP">Teorema CAP</a>
+</li>
+<li>
+  <a href="https://lankydan.dev/2017/11/26/more-complex-modelling-with-spring-data-cassandra">Projeto baseado nesse artigo</a>
+</li>
+<br>
