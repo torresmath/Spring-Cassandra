@@ -1,5 +1,6 @@
 # Spring-Cassandra
 <br>
+<h1>Sobre</h1>
 Um simples CRUD utilizando Spring Data e Cassandra DB para fins de estudo. 
 <br>
 <br>
@@ -12,3 +13,14 @@ Como o Cassandra se compromete a ser um banco de consultas rápidas, todas as qu
 <br>
 <br>
 Na aplicação de exemplo, temos as entidades Movie e Actor. Além delas, criamos entidades para consultas como MovieByActor e MovieByGenre. Há um certo trabalho braçal nisso, pois para manter a coesão entre os dados de cada consulta precisamos garantir que ao registar ou deletar um filme, os dados sejam propagados para suas tabelas de consulta. Essa implementação pode ser vista na classe MovieRepositoryImpl.
+
+<br>
+<br>
+<h1>Como rodar</h1>
+<h2>Requisitos</h2>
+<li>Java 11</li>
+<li>Maven OU IntelliJ</li>
+<li>Docker e Docker compose</li>
+<br>
+Basta dar um docker-compose up no terminal para subir os nodes do Cassandra.
+  
